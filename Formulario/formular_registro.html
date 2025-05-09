@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: #db547c;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #dad6d6;
+        }
+        form {
+            background-color: #f8e6f1;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+    <form action="" method="post"> 
+    <label for="nombre">Nombre:</label> 
+    <input type="text" id="nombre" name="nombre" title="Aqui va el nombre" placeholder="Nombre completo" style="font-family: 'Times New Roman', Times, serif;" maxlength="50" required><br><br>
+    
+    <label for="correo">Correo:</label> 
+    <input type="email" id="correo" name="correo" title="Correo electronico" required minlength="6" placeholder="Correo electronico"><br><br>
+
+    <label for="contraseña">Contraseña:</label>  
+    <input type="password" id="contraseña" name="contraseña" required minlength="8"  max="12" title="Debe tener minimo 8 caracteres, una Mayuscula, un numero y un simbolo" placeholder="Aqui va la contraseña" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$"><br><br>
+
+    <label for="genero">Genero:</label><br>
+    <label for="hombre">Masculino</label>
+    <input type="radio" id="hombre" name="genero"><br>
+    <label for="mujer">Femenino</label>
+    <input type="radio" id="mujer" name="genero"><br>
+    <label for="no">No quiero</label>
+    <input type="radio" id="no" name="genero"><br><br>
+    
+    <label for="intereses">Intereses:</label><br>
+    <label for="pintura">Pintura</label>
+    <input type="checkbox" id="pintura" name="intereses"><br>
+    <label for="escultura">Escultura</label>
+    <input type="checkbox" id="escultura" name="intereses"><br>
+    <label for="fotografia">Fotografia</label>
+    <input type="checkbox" id="fotografia" name="intereses"><br>
+    <label for="musica">Musica</label>
+    <input type="checkbox" id="musica" name="intereses"><br><br>
+
+    <label for="pais">Pais:</label> <br><br>
+    <select name="pais" id="pais" required>
+        <option value="" disabled selected>seleccionar pais</option>
+        <option value="colombia">colombia</option>
+        <option value="mexico">mexico</option>
+    </select><br><br>
+    
+    <label for="comentarios">Comentarios:</label>  
+    <textarea name="comentario" id="comen" placeholder="Escribe algo :v" style="font-family: Arial, Helvetica, sans-serif;"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+</body>
+</html>
