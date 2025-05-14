@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Colombia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Contenedor principal -->
+  <div class="contenedor-principal">
+    <div class="contenedor-inicial">
+      <img class="logo" src="imagenes/logo.png" alt="Logo Netflix" width="45">
+
+      <div class="sesion">
+        <select name="idioma" id="idioma" required>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <button class="boton-iniciar">Iniciar sesión</button>
+      </div>
+
+      <div class="contenido">
+        <h1>Series, películas y programas de TV <br> ¡que no te puedes perder!</h1>
+        <h3>Desde COP 18.900. Cancela cuando quieras.<br>¿Listo para ver? Ingresa tu email para crear o reiniciar tu membresía de Netflix.</h3>
+        <h4>Disfruta de una experiencia personalizada</h4>
+
+        <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required maxlength="50">
+        <button class="boton-empezar">Empezar ⇨</button>
+      </div>
+    </div>
+  </div>
+  <div class="carrusel">
+    <div class="carrusel-contenedor">
+      <h1 class="titulo-carrusel">Recomendado</h1><br>
+      <button class="carrusel-btn izquierda">&#10094;</button>
+      <div class="carrusel-items">
+        <img src="https://mx.web.img2.acsta.net/c_310_420/pictures/19/07/14/20/18/2019537.jpg" alt="Pelicula 1">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Movie_poster_for_%22Scary_Movie%22.jpg/250px-Movie_poster_for_%22Scary_Movie%22.jpg" alt="Pelicula 2">
+        <img src="https://m.media-amazon.com/images/M/MV5BNGFmMDc0NjUtZGQ3ZC00NTI1LWExYmUtOGMyNjlmOGVjOWUxXkEyXkFqcGc@._V1_.jpg" alt="Pelicula 3">
+        <img src="https://musicart.xboxlive.com/7/930e5100-0000-0000-0000-000000000002/504/image.jpg" alt="Pelicula 4">
+        <img src="https://musicart.xboxlive.com/7/d56e1100-0000-0000-0000-000000000002/504/image.jpg" alt="Pelicula 5">
+        <img src="https://es.web.img3.acsta.net/pictures/14/07/30/13/44/020246.jpg" alt="Pelicula 6">
+        <img src="https://images.vix.com/prd/videos/video:mcp:4360300/83e234a9da80f12db3ac1ae590161598" alt="Pelicula 7">
+        <img src="https://i.ytimg.com/vi/TM6Tqiy-riI/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBhWw8V4p0zteW6ptLpFJf3oT7jIA" alt="Pelicula 8">
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/848fa49204708d14c489ec72bb79135a49e8d88b7b0ea49cd1fceb3247798fbb.jpg" alt="Pelicula 9">
+        <img src="https://covers.storytel.com/jpg-640/9789585107472.63aefc72-773b-4f92-bede-424d19270144?optimize=high&quality=70&width=600" alt="Pelicula 10">
+      </div>
+      <button class="carrusel-btn derecha">&#10095;</button>
+    </div>
+  </div>
+  <div class="motivos">
+    <div class="fila-motivos">
+      <div class="motivo">
+        <h1>Contenido sin límites</h1>
+        <p>Disfruta de miles de películas, series, documentales y programas originales cuando quieras, sin restricciones.</p>
+      </div>
+      <div class="motivo">
+        <h1>Calidad en todos los dispositivos</h1>
+        <p>Mira tu contenido favorito en tu TV, laptop, teléfono o tablet, en calidad HD y Ultra HD según tu plan.</p>
+      </div>
+      <div class="motivo">
+        <h1>Sin anuncios</h1>
+        <p>Experimenta entretenimiento sin interrupciones. Todo el contenido sin comerciales.</p>
+      </div>
+      <div class="motivo">
+        <h1>Personalización inteligente</h1>
+        <p>Recibe recomendaciones personalizadas basadas en lo que te gusta ver. Nunca te quedarás sin algo que mirar.</p>
+      </div>
+    </div>
+  </div>
+  <div class="frecuentes">
+    <h2>Preguntas frecuentes</h2>
+    <div class="contenedor-preguntas">
+      
+      <details>
+        <summary>¿Qué puedo ver en esta plataforma?</summary>
+        <p>Puedes ver una amplia variedad de series, películas, documentales y contenido original exclusivo disponible solo aquí.</p>
+      </details>
+
+      <details>
+        <summary>¿Cuánto cuesta la suscripción?</summary>
+        <p>Tenemos planes desde COP 18.900 al mes. Puedes elegir el plan que mejor se adapte a ti y cancelarlo en cualquier momento.</p>
+      </details>
+
+      <details>
+        <summary>¿Puedo ver contenido sin conexión?</summary>
+        <p>Sí. Puedes descargar títulos seleccionados en tu dispositivo móvil o tableta y verlos sin conexión cuando quieras.</p>
+      </details>
+
+      <details>
+        <summary>¿Puedo cancelar en cualquier momento?</summary>
+        <p>Claro. No hay contratos ni cargos por cancelación. Cancela online fácilmente desde tu cuenta con solo un clic.</p>
+      </details>
+
+      <details>
+        <summary>¿Cuántos perfiles puedo crear?</summary>
+        <p>Puedes crear hasta 5 perfiles por cuenta. Así cada miembro de la familia tendrá su experiencia personalizada.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué dispositivos son compatibles?</summary>
+        <p>Puedes usar la plataforma en Smart TVs, consolas, teléfonos, tablets, computadoras y más.</p>
+      </details>
+
+    </div>
+  </div>
+  <div class="registro-correo">
+    <div class="registro-contenido">
+      <p>¿Listo para ver? Ingresa tu email para crear o reiniciar tu membresía de Netflix.</p>
+
+      <form action="#" method="post">
+        <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required maxlength="50">
+        <button type="submit" class="boton-empezar">Empezar ⇨</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footer-contacto">
+    <p>¿Tienes dudas? Llama al <a href="tel:034753891415">03 475 389 1415</a></p>
+  </div>
+
+  <div class="footer-links">
+    <ul>
+      <li><a href="#">Preguntas frecuentes</a></li>
+      <li><a href="#">Cómo funciona Neflix</a></li>
+      <li><a href="#">Información de la empresa</a></li>
+      <li><a href="#">Contenido exclusivo</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Centro de ayuda</a></li>
+      <li><a href="#">Únete al equipo</a></li>
+      <li><a href="#">Términos y condiciones</a></li>
+      <li><a href="#">Contáctanos</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Mi cuenta</a></li>
+      <li><a href="#">Canjear códigos</a></li>
+      <li><a href="#">Política de privacidad</a></li>
+      <li><a href="#">Prueba de velocidad</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Prensa y medios</a></li>
+      <li><a href="#">Tarjetas de regalo</a></li>
+      <li><a href="#">Configuración de cookies</a></li>
+      <li><a href="#">Aviso legal</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-idioma">
+    <select name="idioma" id="idioma">
+      <option value="es">Español</option>
+      <option value="en">Inglés</option>
+    </select>
+  </div>
+
+  <div class="footer-copy">
+    <p><strong>Neflix</strong></p>
+    <p>Plataforma de streaming con contenido exclusivo, diseñada para ti. <a href="#">Conoce más.</a></p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
